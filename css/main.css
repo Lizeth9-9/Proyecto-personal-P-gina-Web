@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo Index */
+body {
+    background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 50%, #311042 100%);
+    min-height: 100vh;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 35% 30px 100px 30px;
+}
+.presentacion h1 {
+    font-size: 2rem;
+    font-weight: 900;
+    color: #d1e1f8;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+    font-family: "Ubuntu", sans-serif;
+}
+.presentacion h2 {
+    font-family: "Inter", sans-serif;
+    font-weight: 100;
+    color: #94a3b8;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 1.5rem;
+}
+nav .bloqueNavegacion ul {
+    list-style: none;
+    padding: 10px;
+}
+nav .bloqueNavegacion li a {
+    text-decoration: none;
+    color: #e2e8f0;
+    padding: 24px;
+    display: inline-block;
+}
+.bloqueNavegacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 25px;
+    background-color: #d1e1f813;
+}
+
+.footerInicio {
+    margin-top: 80%;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    color: #e2e8f0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+/* Estilo BIografia */
+/* body {
+    background: linear-gradient(135deg, #130c2c 0%, #160c2a 50%, #1c0b3c 100%);
+} */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.imgBiografia {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.imgBiografia > img {
+    width: 200px;
+    height: 100vh;
+    opacity: 0.15;
+}
+
+.home h1,
+.home p,
+.biografia h1 {
+    color: #f3e8ff;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 2rem;
+}
+
+.biografia p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* color: #c084fc; */
+    color: rgba(223, 209, 234, 0.4);
+    /* border: 1px solid #f3e8ff; */
+    font-family: "Inter", sans-serif;
+    width: 50%;
+    margin-top: 60px;
+    font-size: 1.2rem;
+}
+
+/*estilo contacto formulario */
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 80px;
+    width: 300px;
+    height: 400px;
+    font-size: 1rem;
+    font-family: "Ubuntu", sans-serif;
+    border-radius: 25px;
+    background-color: #d1e1f813;
+}
+
+.contacto > h1 {
+    font-family: "Inter", sans-serif;
+    color: #94a3b8;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-top: 20px;
+    font-size: 1.8rem;
+}
+
+.datos1 > label {
+    color: #e2e8f0;
+    padding: 24px;
+    display: block;
+}
+.datos1 > input {
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+/* tablet 768 */
+@media (min-width: 768px) {
+    .presentacion h1 {
+        font-size: 2rem;
+    }
+    .presentacion h2 {
+        font-size: 1rem;
+    }
+    nav .bloqueNavegacion ul {
+        list-style: none;
+        padding: 20px;
+    }
+    nav .bloqueNavegacion li a {
+        padding: 28px;
+    }
+    .bloqueNavegacion {
+        width: 400px;
+        font-size: 1.3rem;
+    }
+    .footerInicio {
+        font-size: 1.3rem;
+    }
+}
+/* mini ordenador 992 */
+@media (min-width: 992px) {
+}
+/* 1200 sobremesa */
+@media (min-width: 1200px) {
+    .presentacion {
+        padding: 80px;
+        margin: 3% 30px 100px 30px;
+    }
+    .presentacion h1 {
+        font-size: 3rem;
+    }
+    nav .bloqueNavegacion ul {
+        display: flex;
+        list-style: none;
+        padding: 10px;
+        gap: 80px;
+    }
+
+    nav .bloqueNavegacion li a {
+        padding: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .bloqueNavegacion {
+        width: 1000px;
+        font-size: 1.3rem;
+    }
+
+    .footerInicio {
+        margin-top: 80%;
+        width: 100%;
+        height: 50px;
+        text-align: center;
+        color: #e2e8f0;
+        font-family: "Ubuntu", sans-serif;
+    }
+    .footerInicio {
+        margin-top: 13%;
+        font-size: 1.4;
+    }
+}
